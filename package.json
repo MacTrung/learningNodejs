@@ -1,0 +1,26 @@
+{
+  "name": "learning_nodejs",
+  "version": "1.0.0",
+  "description": "Tu hoc node js thoi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "learningNodejs"
+  ],
+  "author": "MacTrung",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacTrung/learningNodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MacTrung/learningNodejs/issues"
+  },
+  "homepage": "https://github.com/MacTrung/learningNodejs#readme",
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}

@@ -3,17 +3,19 @@ const express = require('express');//dùng import là nỗi đóa
 require('dotenv').config()
 const path = require('path');
 const app = express(); //app của express
-
+const configViewEngine = require('./config/viewEngine.js');
 
 const port = process.env.PORT || 8080;
 const hostname = process.env.HOST_NAME || 'localhost';
 
 console.log("check", process.env.PORT);
 
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
+configViewEngine(app);
+
 //cấu hình static file (chỗ lưu css, ảnh, js) aka:frondend
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 app.get('/', (req, res) => { //khai báo route
     res.send('Hello World! with nodemon')
